@@ -1,0 +1,19 @@
+
+public class AdharCardd implements Comparable<AdharCardd> {
+	
+	long adharNo;
+	String name;
+	public AdharCardd(String name, long adharNo) {
+		super();
+		this.adharNo = adharNo;
+		this.name = name;
+	}
+	@Override
+	public int compareTo(AdharCardd o) {
+		Long adharno=this.adharNo;
+		return adharno.compareTo(o.adharNo);
+		
+	}
+	
+
+}
